@@ -13,12 +13,39 @@
         </style>
         <script>
             function total(){
-                var sub=(3.25*parseFloat(quantity1.value))+(4.00*parseFloat(quantity2.value))+(5.25*parseFloat(quantity3.value)+(3.50*parseFloat(quantity4.value))+(4.25*parseFloat(quantity5.value));
-                var tax=(parseFloat(sub)*.00875);
-                var t = parseFloat(sub)+parseFloat(tax);
-                if 
-                
-            
+               var quantity1=document.getElementById("quantity1");
+               var quantity2=document.getElementById("quantity2");
+               var quantity3=document.getElementById("quantity3");
+               var quantity4=document.getElementById("quantity4");
+               var quantity5=document.getElementById("quantity5");
+               var output=document.getElementById("output");
+               var macchiato=3.25;
+               var cafeconleche=4.00;
+               var cappuncino=5.25;
+               var flatwhite=3.50;
+               var affogato=4.25;
+               var s1=25;
+               var s2=10;
+               var s3=0;
+               var sb=(macchiato*parseFloat(quantity1.value))+(cafeconleche*parseFloat(quantity2.value))+(cappuncino*parseFloat(quantity3.value))+(flatwhite*parseFloat(quantity4.value))+(affogato*parseFloat(quantity5.value));
+               var tax=sb*0.0875;
+               var t=parseFloat(sb)+parseFloat(t);
+               var build="";
+                   build+="Subtotal: $"+sb+"<br>";
+                   if(sb<100){
+                       build+="Shipping: $"+s1+"<br>";
+                       shipping=s1;
+                   }else if(subtotal>=100 && subtotal <=200){
+                       build+="Shipping: $"+s2+"<br>";
+                       shipping=s2;
+                   }else if(sb>200){
+                       build+="Shipping: $"+s3+"<br>";
+                       shipping=s3
+                   }  
+                var bill= parseFloat(t+shipping);
+                       build+="_______________________<br>";
+                       build+="Total: $"+bill;
+                output.innerHTML=build;
         </script>
     </head>
     <body>
@@ -70,4 +97,4 @@
       
 
     </body>
-<html>  
+<html>
