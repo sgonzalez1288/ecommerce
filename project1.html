@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Skye's coffee Shop</title>
+        <style>
+            img{
+                width:200px;
+            }
+            input{
+                width:20px;
+            }
+          
+        </style>
+        <script>
+            function total(){
+                var sub=(3.25*parseFloat(quantity1.value))+(4.00*parseFloat(quantity2.value))+(5.25*parseFloat(quantity3.value)+(3.50*parseFloat(quantity4.value))+(4.25*parseFloat(quantity5.value));
+                var tax=(parseFloat(sub)*.00875);
+                var t = parseFloat(sub)+parseFloat(tax);
+                if 
+                
+            
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1> macchiato </h1>
+            <img src="macchiato.jpg"><br>
+            <span style="color:green;font-weight:bold"> $3.25 </span>
+            <p> It's basically an espresso (served in a demitasse cup) with
+                 a small amount of foamed milk on top, the name macchiato
+                  means marked.
+            </p>
+            quantity: <input type="text" id="quantity1" placeholder="0">
+            <h2> cafe con leche </h2>
+            <img src="cafe con leche.jpg"><br>
+            <span  style="color:green;font-weight:bold"> $4.00 </span>
+            <p>coffee beverage consisting of strong or bold coffee (usually 
+                espresso) mixed with scalded milk in approximately a 1:1 ratio. 
+                Sugar or sweetener is added according to taste.
+            </p>
+            quantity: <input type="text" id="quantity2" placeholder="0">
+            <h3>cappuncino</h3>
+            <img src="cappuncino.jpg"><br>
+            <span  style="color:green;font-weight:bold"> $5.25 </span>
+            <p>coffee drink that today is composed of double espresso and hot 
+                milk, with the surface topped with foamed milk.
+            </p>
+            quantity: <input type="text" id="quantity3" placeholder="0">
+            <h4> flat white </h4>
+            <img src="flat white.jpg"><br>
+            <span  style="color:green;font-weight:bold"> $3.50 </span>
+            <p>an espresso-based coffee drink. It is prepared by pouring microfoam 
+                (steamed milk with small, fine bubbles with a glossy or velvety 
+                consistency) into a single or double shot of espresso.
+            </p>
+            quantity: <input type="text" id="quantity4" placeholder="0">
+            <h5> affogato </h5>
+            <img src="affogato.jpg"><br>
+            <span  style="color:green;font-weight:bold"> $4.25 </span>
+            <p> It usually takes the form of a scoop of vanilla gelato or ice 
+                cream topped or "drowned" with a shot of hot espresso. ... It 
+                is considered one drink, not a combination of coffee and ice 
+                cream.
+            </p>
+            quantity: <input type="text" id="quantity5" placeholder="0">
+            <br><br>
+            <button onclick="total()"> TOTAL </button>
+        </div>
+        <div id="output"></div>
+      
+
+    </body>
+<html>  
