@@ -29,7 +29,7 @@
                var s3=0;
                var sb=(macchiato*parseFloat(quantity1.value))+(cafeconleche*parseFloat(quantity2.value))+(cappuncino*parseFloat(quantity3.value))+(flatwhite*parseFloat(quantity4.value))+(affogato*parseFloat(quantity5.value));
                var tax=sb*0.0875;
-               var t=parseFloat(sb)+parseFloat(t);
+               var t=parseFloat(sb)+parseFloat(tax);
                var build="";
                    build+="Subtotal: $"+sb+"<br>";
                    if(sb<100){
@@ -42,7 +42,7 @@
                        build+="Shipping: $"+s3+"<br>";
                        shipping=s3
                    }  
-                var bill= parseFloat(t+shipping);
+                var bill= t + shipping;
                        build+="_______________________<br>";
                        build+="Total: $"+bill;
                 output.innerHTML=build;
